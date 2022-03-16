@@ -26,9 +26,18 @@ public class MainActivity extends AppCompatActivity {
          *  add objects from class Student
          */
 
+        ArrayList<Student> students = new ArrayList<>();
+        Student S1 = new Student("Yousef",14,12,R.drawable.boy1);
+        Student S2 = new Student("Salman",13,10,R.drawable.boy1);
+        Student S3 = new Student("Majed",15,11,R.drawable.boy1);
+
+
+        students.add(S1);
+        students.add(S2);
+        students.add(S3);
+
 
         StudentAdapter studentAdapter = new StudentAdapter(this,0,students);
-
 
         listView.setAdapter(studentAdapter);
     }
